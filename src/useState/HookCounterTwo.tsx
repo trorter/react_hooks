@@ -9,7 +9,7 @@ const HookCounterTwo = () => {
   const [items, setItems] = useState<Array<Item>>([]);
 
   const addNumber = () => {
-    setItems([...items, {key: items.length, value: items.length.toString()}])
+    setItems([...items, {key: items.length, value: (Math.floor(Math.random() * 10) + 1).toString()}])
   }
 
   return (
