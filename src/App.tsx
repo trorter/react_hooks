@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ContainerComponent from "./useCallback/ContainerComponent";
+import Counter from "./useMemo/Counter";
 
 export type UserContextType = {
   userName: string
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <UserContent.Provider value={{userName: 'Andrei'}} >
-        <ContainerComponent />
+        <Counter />
       </UserContent.Provider>
     </div>
   )
