@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import HookCounterTwo from "./useState/HookCounterTwo";
-import HookMouse from "./useEffect/HookMouse";
-import MouseContainer from "./useEffect/MouseContainer";
+import PostsHook from "./useEffect/posts/PostsHook";
 
 function App() {
   return (
     <div className="App">
-      <MouseContainer />
+      <PostsHook />
     </div>
   );
 }
