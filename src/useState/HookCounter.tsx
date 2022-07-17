@@ -14,7 +14,14 @@ const HookCounter: FC = () => {
               marginRight: "5px"
             }}>
               First name:</span>
-            <input type={"text"} onChange={(event) => setName({...name, firstName: event.target.value})}/>
+            <input
+              type={"text"}
+              onChange={
+                (event) => setName(prevState => {
+                  return {...prevState, firstName: event.target.value}
+                })
+              }
+            />
           </label>
         </div>
 
@@ -27,7 +34,14 @@ const HookCounter: FC = () => {
             }}>
               Last name:
             </span>
-            <input type={"text"} onChange={(event) => setName({...name, lastName: event.target.value})}/>
+            <input
+              type={"text"}
+              onChange={
+                (event) => setName(prevState => {
+                  return {...prevState, lastName: event.target.value}
+                })
+              }
+            />
           </label>
         </div>
 

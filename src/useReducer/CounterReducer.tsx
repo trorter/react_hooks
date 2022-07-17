@@ -1,4 +1,4 @@
-import React, {useReducer} from "react";
+import React, {FC, useReducer} from "react";
 
 type CounterState = {
   counter: number
@@ -17,7 +17,7 @@ type Action =
 
 type Reducer<S, A> = (prevState: S, action: A) => S
 
-const CounterReducer = () => {
+const CounterReducer: FC = () => {
 
   const initialState: CounterState = {counter: 0}
 

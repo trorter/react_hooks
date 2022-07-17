@@ -5,7 +5,7 @@ const MouseContainer: FC = () => {
   const [display, setDisplay] = useState(true)
 
   const clickHandler = (): void => {
-    setDisplay(!display)
+    setDisplay(prevState => !prevState)
   }
 
   return (
