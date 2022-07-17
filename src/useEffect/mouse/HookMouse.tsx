@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from "react";
+import React, {FC, useEffect, useState} from "react";
 
-const HookMouse = () => {
+const HookMouse: FC = () => {
   const [coords, setCoords] = useState({x: 0, y: 0});
 
   const logMousePosition = (event: MouseEvent) => {

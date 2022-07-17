@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, {FC, useState} from "react";
 import HookMouse from "./HookMouse";
 
-const MouseContainer = () => {
+const MouseContainer: FC = () => {
   const [display, setDisplay] = useState(true)
 
   const clickHandler = (): void => {

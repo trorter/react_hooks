@@ -1,11 +1,11 @@
-import React, {useContext} from "react";
+import React, {FC, useContext} from "react";
 import {UserContent} from "../App";
 
-const ComponentA = () => {
+const ComponentA: FC = () => {
   const context = useContext(UserContent);
   return (
     <div>
-      {context}
+      {context.userName}
     </div>
   )
 }

@@ -1,11 +1,11 @@
-import {ChangeEvent, useEffect, useState} from "react";
+import {ChangeEvent, FC, useEffect, useState} from "react";
 import axios from "axios";
 
 type ServerResponse = {
   body: string
 }
 
-const PostsHook = () => {
+const PostsHook: FC = () => {
   const [text, setText] = useState('');
   const [requestText, setRequestText] = useState('');
   const [data, setData] = useState('');

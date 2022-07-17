@@ -1,6 +1,6 @@
-import React, {useState} from "react"
+import React, {FC, useState} from "react"
 
-const HookCounter = () => {
+const HookCounter: FC = () => {
   const [name, setName] = useState({firstName: '', lastName: ''})
 
   return (

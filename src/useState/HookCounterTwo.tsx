@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, {FC, useState} from "react";
 
 type Item = {
   key: number
   value: string
 }
 
-const HookCounterTwo = () => {
+const HookCounterTwo: FC = () => {
   const [items, setItems] = useState<Array<Item>>([]);
 
   const addNumber = () => {

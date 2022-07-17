@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
-import ComponentC from "./useContext/ComponentC";
+import CounterReducer from "./useReducer/CounterReducer";
 
-export const UserContent = React.createContext('')
+export type UserContextType = {
+  userName: string
+}
+
+export const UserContent = React.createContext<UserContextType>({userName: ''})
 
 const App = () => {
   return (
     <div className="App">
-      <UserContent.Provider value={'Andrei'} >
-        <ComponentC/>
+      <UserContent.Provider value={{userName: 'Andrei'}} >
+        <CounterReducer />
       </UserContent.Provider>
     </div>
   )

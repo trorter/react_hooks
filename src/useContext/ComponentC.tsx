@@ -1,7 +1,7 @@
-import React from "react";
+import React, {FC} from "react";
 import ComponentB from "./ComponentB";
 
-const ComponentC = () => {
+const ComponentC: FC = () => {
   return (
     <ComponentB />
   )
