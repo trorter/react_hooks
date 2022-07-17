@@ -7,8 +7,6 @@ type ButtonPropsType = {
 
 /**
  * Universal button component
- * @param props
- * @constructor
  */
 const Button: FC<ButtonPropsType> = (props: ButtonPropsType) => {
 
