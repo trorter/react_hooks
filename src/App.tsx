@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Focus from "./useRef/Focus";
+import TimerHook from "./useRef/TimerHook";
 
 export type UserContextType = {
   userName: string
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <UserContent.Provider value={{userName: 'Andrei'}} >
-        <Focus />
+        <TimerHook />
       </UserContent.Provider>
     </div>
   )
