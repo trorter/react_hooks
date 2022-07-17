@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
-import PostsHook from "./useEffect/posts/PostsHook";
+import ComponentC from "./useContext/ComponentC";
 
-function App() {
+export const UserContent = React.createContext('')
+
+const App = () => {
   return (
     <div className="App">
-      <PostsHook />
+      <UserContent.Provider value={'Andrei'} >
+        <ComponentC/>
+      </UserContent.Provider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
